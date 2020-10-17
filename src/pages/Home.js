@@ -7,8 +7,8 @@ export default function Home(){
         <section id="three" className="wrapper special">
                 <div className="inner">
                     <header className="align-center">
-                        <h2>Desenvolvedores</h2>
-                        <p>Informações sobre os desenvolvedores do website</p>
+                        <h2>Developers</h2>
+                        <p>Information about website developers</p>
                     </header>
                     <div className="flex flex-2">
                         <article>
@@ -20,7 +20,7 @@ export default function Home(){
                             </header>
                             <span><b>RA:</b> 1118046</span>
                             <br/>
-                            <span><b>E-mail:</b> jcnunessantosnunes@outlook.com</span>
+                            <span><b>E-mail:</b>1118046@imed.edu.br</span>
                             <br/><br/>
                         </article>
                         <article>
@@ -30,9 +30,9 @@ export default function Home(){
                             <header>
                                 <h3>Renato Papke</h3>
                             </header>
-                            <span><b>RA:</b> RA DO VEIO É AQUI</span>
+                            <span><b>RA:</b>1118673</span>
                             <br/>
-                            <span><b>E-mail:</b> veioidoso@gmail.com</span>
+                            <span><b>E-mail:</b>1118673@imed.edu.br</span>
                             <br/><br/>
                         </article>
                     </div>
