@@ -28,7 +28,7 @@ export default function Starships(){
                     <div className="flex flex-2">
                         {
                             starShipsList.map((item) =>
-                                <Card style={{ width: '22rem' }} className="box">
+                                <Card style={{ width: '40rem' }} className="box">
                                     <Card.Body>
                                         <Card.Title>{item.name}</Card.Title>
                                         <Card.Subtitle className="mb-2 text-muted">Classification: {item.classification}</Card.Subtitle>

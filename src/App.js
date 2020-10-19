@@ -12,13 +12,13 @@ import Species from './pages/Species';
 import Login from './pages/Login';
 
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Header/>
         <Switch>
           <Route path='/' exact={true} component={Home}/>
@@ -30,7 +30,7 @@ function App() {
           <Route path="/login" component={Login} />
         </Switch>
         <Footer/>
-        </BrowserRouter>
+        </HashRouter>
     </>
   );
 }
