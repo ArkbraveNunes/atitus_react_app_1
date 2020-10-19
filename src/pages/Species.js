@@ -13,7 +13,7 @@ export default function Starships(){
     }, [])
 
     const getStarships = async () =>  {
-        const {results} = await starWarsService.getStarships();
+        const {results} = await starWarsService.getSpecies();
         setterStarships(results)
     }
     return(

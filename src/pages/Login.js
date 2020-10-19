@@ -1,8 +1,5 @@
-import React, { useState, useLayoutEffect } from 'react'
+import React from 'react'
 import Banner from '../components/Banner'
-import StarWarsService from '../services/films-service'
-
-const starWarsService = new StarWarsService();
 
 export default function Starships(){
     return(
@@ -10,7 +7,7 @@ export default function Starships(){
         <Banner title='Star Wars Page for Fans' message='A web page for fans of Star Wars'/>
         <section id="three" className="wrapper special container">
             <h3>Login</h3>
-            <form method="post" action="#">
+            <form /*method="post" action="#"'*/>
                 <div class="row uniform">
                     <div class="6u 12u$(xsmall)">
                         <input type="text" name="name" id="name"  placeholder="Name" />
