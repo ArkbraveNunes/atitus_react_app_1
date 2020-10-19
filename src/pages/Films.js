@@ -1,6 +1,7 @@
 import React, { useState, useLayoutEffect } from 'react'
 import Banner from '../components/Banner'
 import StarWarsService from '../services/films-service'
+import FilmsUtils from '../utils/films-utils'
 import { Card } from 'react-bootstrap'
 
 const starWarsService = new StarWarsService();
@@ -14,7 +15,7 @@ export default function Films(){
 
     const getFilms = async () =>  {
         const {results} = await starWarsService.getFilms();
-        setterFilms(results)
+        setterFilms(FilmsUtils.orderFilms({filmsList: results}))
     }
     return(
         <>
@@ -28,14 +29,14 @@ export default function Films(){
                     <div className="flex flex-2">
                         {
                             filmsList.map((item) =>
-                                <Card style={{ width: '22rem' }} className="box">
+                                <Card style={{ width: '40rem' }} className="box">
                                     <Card.Body>
                                         <Card.Title>{item.title}</Card.Title>
                                         <Card.Subtitle className="mb-2 text-muted">Director: {item.director}</Card.Subtitle>
                                         <Card.Subtitle className="mb-2 text-muted">Producer: {item.producer}</Card.Subtitle>
                                         <Card.Subtitle className="mb-2 text-muted">Episode: {item.episode_id}</Card.Subtitle>
                                         <Card.Subtitle className="mb-2 text-muted">Release Date: {item.release_date}</Card.Subtitle>
-                                        <Card.Text>{item.opening_crawl}</Card.Text>
+                                        <Card.Text style={{ 'text-align': 'justify' }}>{item.opening_crawl}</Card.Text>
                                     </Card.Body>
                                 </Card>
                             )
@@ -46,7 +47,3 @@ export default function Films(){
         </>
     )
 }
-
-// "director": "George Lucas",
-// "producer": "Gary Kurtz, Rick McCallum",
-// "release_date": "1977-05-25",
