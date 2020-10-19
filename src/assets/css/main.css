@@ -3012,8 +3012,12 @@
 
 /* Footer */
 
+	#footer {
+		background: rgb(0 8 37);
+	}
+
 	#footer .inner {
-		border-top: 1px solid #dbdbdb;
+		/* border-top: 1px solid #dbdbdb; */
 		padding-top: 3em;
 	}
 
