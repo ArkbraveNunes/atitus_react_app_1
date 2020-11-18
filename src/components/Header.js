@@ -9,13 +9,9 @@ export default function Header() {
                     </p>
                 </Link>
                 <nav id='nav'>
-                    <Link to='/'>HOME</Link>
-                    <Link to='/films'>FILMS</Link>
-                    <Link to='/starships'>STARSHIPS</Link>
-                    <Link to='/people'>PEOPLE</Link>
-                    <Link to='/planets'>PLANETS</Link>
-                    <Link to='/species'>SPECIES</Link>
-                    <Link to='/login'>LOGIN</Link>
+                    <Link to='/'>Home</Link>
+                    <Link to='/tutorial'>Monte Seu Cluster</Link>
+                    <Link to='/future/cloud'>Futuro de Cloud Computing</Link>
                 </nav>
                 <a href='#navPanel' className='navPanelToggle'><span className='fa fa-bars'></span></a>
             </div>

@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="inner">
                 <div className="flex">
                     <div className="copyright">
-                        &copy; Desenvolvido na aula de Tópicos Especiais em Programação.
+                        &copy; Desenvolvido na aula de Clusters e Cloud Computing.
                     </div>
                 </div>
             </div>
